@@ -7,7 +7,9 @@
   --titles-color: #212121;
   --brand-color: #2196f3;
   --page-background-color: #f5f5f5;
+  --hero-background-color: #c4c4c4;
 
+  --page-width: 1600px;
   --container-width: 1200px;
 }
 
@@ -98,6 +100,10 @@ img {
 
 /* Header */
 .pages-head {
+  width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -190,12 +196,21 @@ img {
 /* Main in index.html*/
 /* Hero section*/
 .hero {
+  width: var(--page-width);
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 200px;
   padding-bottom: 200px;
-
   text-align: center;
 
-  background: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-images/background-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--hero-background-color);
 }
 
 .hero-title {
