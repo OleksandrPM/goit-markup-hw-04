@@ -540,9 +540,9 @@ svg {
 }
 
 .portfolio-list > li {
-  width: calc(100%-60px) / 3;
+  width: calc(100%-60px / 3);
 
-  background: var(--clear-white-color);
+  background-color: var(--clear-white-color);
 }
 
 .portfolio-list > li:hover {
