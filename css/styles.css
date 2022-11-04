@@ -19,8 +19,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 svg {
@@ -206,9 +204,6 @@ svg {
   color: var(--brand-color);
 }
 
-
-
-
 /* Main in index.html*/
 /* Hero section*/
 .hero {
@@ -224,7 +219,7 @@ svg {
     url(../images/background-images/background-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: var(--page-width);
   background-color: var(--hero-background-color);
 }
 
@@ -296,6 +291,14 @@ svg {
   letter-spacing: 0.03em;
 }
 
+.decoration {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 /* Work section */
 .work-section {
   padding-top: 0px;
@@ -353,6 +356,8 @@ svg {
 }
 
 .team-list .article {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -360,25 +365,57 @@ svg {
   text-align: center;
 }
 
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials .link {
+  padding: 12px;
+
+  color: #afb1b8;
+
+  border-radius: 50%;
+}
+
+.socials .link:hover,
+.socials .link:focus {
+  color: var(--clear-white-color);
+  background-color: var(--brand-color);
+}
+
+.socials .icon {
+  fill: currentColor;
+}
+
 /* Clientage section */
 .clientage-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
-.clientage-list > li {
-  display: block;
-  width: 170px;
-  /* min-width: calc(100%-150px) / 6; */
-}
-
 .client-link {
-  width: 100%;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #afb1b8;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.client-link .icon {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--brand-color);
 }
 
 /* Footer */
